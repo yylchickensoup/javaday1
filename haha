@@ -1,0 +1,19 @@
+import java.util.LinkedList;
+
+public class Listdemo {
+    public static void main(String[] args) {
+        LinkedList<String> linkedList = new LinkedList<String>();
+        linkedList.add("hello");
+        linkedList.add("world");
+        linkedList.add("java");
+        System.out.println(linkedList);
+        linkedList.addFirst("javase");//增加第一个元素
+        linkedList.addLast("javaee");//增加最后一个元素
+        System.out.println(linkedList);
+        System.out.println(linkedList.getFirst());//获取第一个元素的值
+        System.out.println(linkedList.getLast());//获取最后一个元素的值
+        System.out.println(linkedList.removeFirst());//删除第一个元素，并并返回第一个元素
+        System.out.println(linkedList.removeLast());//删除最后一个元素，并返回最后一个元素
+        System.out.println(linkedList);
+    }
+}
